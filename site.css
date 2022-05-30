@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.top-div1{
+    background-color: #24ffff;
+    float: left;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.top-div1 i{
+    margin-top: 7px;
+}
+
+.top-div1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.top-div1 a:hover{
+    color: blue;
+}
+
+/*Menu*/
+
+.menu{
+    background-color: #24ffff;
+    float: right;
+    height: 50px;
+    width: 70%;
+    
+}
+
+.menu ul{
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 16px 40px;
+    border-left: 1px solid #575757;
+    margin-right: -5px; ;
+}
+
+.menu ul li:hover{
+    background-color: #13eaea;
+}
+
+.menu ul li:last-child{
+    border-right: 1px solid #575757;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #575757;
+}
+
+/*DropDown Menu*/
+
+.menu ul li{
+    position: relative;
+}
+
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100px;
+    display:block;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.menu ul li ul li{
+    background-color:#24ffff ;
+    padding: 15px 16px;
+    border-top:1px solid #575757 ;
+}
+
+.menu ul li ul li a{
+    color: #575757;
+    font-size: 15px;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transition: .6s;
+    transform: scaleY(1);
+}
+
+.img-back{
+    background-image: url(https://thumbs.dreamstime.com/b/purple-petunia-flowers-bed-beautiful-blurred-nature-background-banner-website-garden-concept-toned-54798543.jpg);
+    padding: 200px 400px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.img-back h3{
+    color: white;
+    background-color: rgba(244, 173, 68, .4) ;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.img-back h1{
+    color: white;
+    background-color: rgba(49, 241, 27, 0.4) ;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.aboutus{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.aboutus p{
+    font-size: 17px;
+}
+
+.skill{
+    height: 200px;
+    width: 90%;
+    border: 2px dotted lightskyblue;
+    display: inline-block;
+    padding: 60px;
+    background-color: #52ff52;
+    margin-bottom: 30px;
+}
+
+.webdesign{
+    color: white;
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    right: 30px;
+    background-image: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6037fd6d292fe47561a93ac4_how-to-learn-web-design-p-1600.jpeg);
+    background-position: center center;
+    background-size: contain;
+}
+
+.graphicdesign{
+    color: white;
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    background-image: url(http://clipart-library.com/images_k/transparent-graphic-design/transparent-graphic-design-19.png);
+    background-color: rgb(2, 186, 219);
+    background-position: center center;
+    background-size: contain;
+
+}
+
+.digitalmarket{
+    color: white;
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-image: url(https://909180.smushcdn.com/2231874/wp-content/uploads/2020/12/tech-policy-cover.jpg?lossy=0&strip=1&webp=1);
+    background-position: center center;
+    background-size: contain;
+}
+
+.webdesign i{
+    background-color: rgb(255, 191, 0);
+    padding: 10px;
+    border-radius: 10px 0px;
+    color: rgb(209, 18, 4);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.graphicdesign i{
+    background-color: rgb(255, 191, 0);
+    padding: 10px;
+    border-radius: 10px 0px;
+    color: rgb(209, 18, 4);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.digitalmarket i{
+    background-color: rgb(255, 191, 0);
+    padding: 10px;
+    border-radius: 10px 0px;
+    color: rgb(209, 18, 4);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.green{
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: rgb(245, 140, 43);
+}
+
+.img-p img{
+    max-width: 15%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.img-p p{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.img-p{
+    width: 70%;
+    float: left;
+}
+
+.notice{
+    float: right;
+    width: 30%;
+}
+
+.notice ul li{
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 10px;
+    border: 1.5px solid rgb(118, 118, 118);
+    background-color: rgb(232, 227, 227);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.notice h1{
+    border-bottom: 2px solid rgb(198, 195, 195);
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.notice ul li a{
+    text-decoration: none;
+    color: rgb(176, 80, 12);
+}
+
+.notice ul li:hover{
+    background-color: rgb(198, 195, 195);
+    cursor: pointer;
+}
+
+.notice ul li:first-child{
+    margin-top: 20px;
+}
+
+.footer1{
+background-color: rgb(75, 74, 74);
+color: bisque;
+padding: 5px 0px;
+width: 70%;
+float: left;
+}
+
+.footer1 i{
+    border: 3px solid bisque;
+    border-radius: 50%;
+    max-height: 60%;
+    width: auto;
+    padding: 3px;
+}
+
+.footer2{
+    background-color: rgb(75, 74, 74);
+    color: bisque;
+    font-size: 17px;
+    padding: 10px 0px;
+    width: 30%;
+    float: right;
+}
+
+.footer2 a i{
+    margin: 0px 10px;
+    color: bisque;
+}
+
+.footer2 a i:hover{
+    color: rgb(253, 175, 81);
+}
+
+
+
+
+
+
+
